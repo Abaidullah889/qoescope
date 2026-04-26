@@ -35,7 +35,8 @@ QoEScope follows a pipeline architecture with six containerised services:
 
 ```
 [Sender] ──RTP/UDP──► [Probe (eBPF/XDP)] ──metrics──► [Aggregator] ──► [InfluxDB] ──► [Grafana]
-                                                              ▲
+                               |                             ▲
+                               ▼                             | 
                        [Analyzer (BRISQUE)] ──scores─────────┘
 ```
 
