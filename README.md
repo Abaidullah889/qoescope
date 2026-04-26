@@ -8,10 +8,10 @@ QoEScope is a passive network probe that monitors the Quality of Experience (QoE
 
 | Field | Value |
 |---|---|
-| Title | Passive Real-Time Video QoE Monitoring Using eBPF/XDP and BRISQUE |
-| Author | Abaid Ullah |
+| Title | A Framework for Measuring Quality of Experience (QoE) in Live Video Streams |
+| Author | Abaidullah Asif |
 | University | Eötvös Loránd University |
-| Year | 2025 |
+| Year | 2026 |
 
 ## Project Structure
 
