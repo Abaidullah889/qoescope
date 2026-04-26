@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Logs
+*.log
+
+# BPF build artifacts
+*.o
+*.ll
+
+# Metrics
+brisque_metrics.json
+metrics.json
+
+# Virtual environment
+venv/
+.env
+
+# IDE
+*.vscode/
+*.idea/
+
+# video files
+*.mp4
