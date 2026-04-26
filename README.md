@@ -2,7 +2,7 @@
 
 ## Project Abstract
 
-QoEScope is a passive network probe that monitors the Quality of Experience (QoE) of live RTP/H.264 video streams in real time. It captures packets at the kernel level using eBPF/XDP, decodes the H.264 bitstream, scores each frame with the no-reference BRISQUE metric, and streams all measurements into InfluxDB for live Grafana dashboards — with zero modification to the sender or network.
+QoEScope is a passive network probe that monitors the Quality of Experience (QoE) of live RTP/H.264 video streams in real time. It captures packets at the kernel level using eBPF/XDP, decodes the H.264 bitstream, scores each frame with the no-reference BRISQUE metric, and streams all measurements into InfluxDB for live Grafana dashboards, all with zero modification to the sender or network.
 
 ## Thesis Information
 
