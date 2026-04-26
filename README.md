@@ -1,4 +1,4 @@
-# QoEScope — Passive Real-Time Video QoE Monitoring
+# QoEScope - Real-Time Video QoE Monitoring
 
 ## Project Abstract
 
