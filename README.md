@@ -40,12 +40,12 @@ QoEScope follows a pipeline architecture with six containerised services:
                        [Analyzer (BRISQUE)] ──scores─────────┘
 ```
 
-- **Probe** — attaches an XDP program to the network interface, counts RTP packets/bytes, parses sequence numbers, and exposes a FastAPI metrics endpoint.
-- **Analyzer** — receives the RTP stream, reassembles NAL units, decodes H.264 frames with libavcodec (PyAV), and scores each frame with BRISQUE via OpenCV. Exposes a FastAPI metrics endpoint.
-- **Aggregator** — polls both endpoints every second, merges the metrics, and writes them to InfluxDB.
-- **InfluxDB** — time-series storage for all QoE measurements.
-- **Grafana** — live dashboard provisioned automatically on startup.
-- **Sender** — feeds a test video file as an RTP stream for development and testing.
+- **Probe** - attaches an XDP program to the network interface, counts RTP packets/bytes, parses sequence numbers, and exposes a FastAPI metrics endpoint.
+- **Analyzer** - receives the RTP stream, reassembles NAL units, decodes H.264 frames with libavcodec (PyAV), and scores each frame with BRISQUE via OpenCV. Exposes a FastAPI metrics endpoint.
+- **Aggregator** - polls both endpoints every second, merges the metrics, and writes them to InfluxDB.
+- **InfluxDB** - time-series storage for all QoE measurements.
+- **Grafana** - live dashboard provisioned automatically on startup.
+- **Sender** - feeds a test video file as an RTP stream for development and testing.
 
 ## Technologies
 
@@ -71,7 +71,7 @@ QoEScope follows a pipeline architecture with six containerised services:
 - Docker Compose
 - InfluxDB 2.7
 - Grafana 12.4.1
-- NVIDIA Container Runtime (GPU-accelerated BRISQUE)
+- NVIDIA Container Runtime
 
 ## Prerequisites
 
@@ -136,18 +136,8 @@ Integration tests verify end-to-end data flows:
 Install test dependencies and run from the project root:
 
 ```bash
-pip install pytest pytest-asyncio httpx
-pytest tests/ -v
-```
-
-To generate a coverage report:
-
-```bash
-pip install pytest-cov
-pytest tests/ -v --cov=. --cov-report=html
-```
-
-Coverage output is written to `htmlcov/index.html`.
+pip install pytest pytest-asyncio fastapi httpx
+pytest tests/
 
 ## Research Methodology
 
