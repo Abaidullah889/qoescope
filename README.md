@@ -22,11 +22,14 @@ qoescope/
 ├── aggregator/     # Metrics poller → InfluxDB writer
 ├── sender/         # Test video sender (RTP stream generator)
 ├── grafana/        # Provisioned Grafana dashboards and datasources
+├── videos/         # point to store videos for testing
 ├── tests/          # Unit and integration test suite
 │   ├── unit/
 │   ├── integration/
 │   └── fixtures/
 └── docker-compose.yml
+└── .env
+└── .gitignore
 ```
 
 ## Architecture Overview
