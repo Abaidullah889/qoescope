@@ -11,9 +11,6 @@ __pycache__/
 *.o
 *.ll
 
-# Metrics
-brisque_metrics.json
-metrics.json
 
 # Virtual environment
 venv/
@@ -22,6 +19,3 @@ venv/
 # IDE
 *.vscode/
 *.idea/
-
-# video files
-*.mp4
