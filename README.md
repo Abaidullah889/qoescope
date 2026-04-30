@@ -139,6 +139,8 @@ Integration tests verify end-to-end data flows:
 Install test dependencies and run from the project root:
 
 ```bash
+python3 -m venv venv 
+source venv/bin/activate
 pip install pytest pytest-asyncio fastapi httpx
 pytest tests/
 ```
